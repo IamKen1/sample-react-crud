@@ -88,7 +88,7 @@ function App() {
       <Container >
         <Row >
           <Col className="mt-5 mb-1"> 
-          <h3>CRUD</h3>
+        
           <Button className="col-md-12" responsive size="sm" variant='primary' onClick={() => handleShow()}>
             Add
           </Button>
@@ -133,7 +133,7 @@ function App() {
           <Modal centered show={showModal} onHide={handleClose}>
             <Modal.Header>
               <Modal.Title>
-                {formData.id ? "Edit Record" : "Add Record"}
+                {formData.id ? "Edit" : "Add"}
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
